@@ -10,6 +10,18 @@ import json
 import csv
 from sklearn import preprocessing
 
+client_id = '97aeaf1e98f943edb1344ab86f71692a' ##ganti variabel dengan client_id milik anda
+client_secret = '9f35e123caa7490b904ad6bcb98f4ba9' ##ganti variabel dengan client_secret milik anda
+playlistId = '1dtCMTYzAOzwKXqklxPJNS'
+
+## 37i9dQZF1DXbrUpGvoi3TS - 1(similar sad songs)
+## 1dtCMTYzAOzwKXqklxPJNS - 2(old songs, rock, rap)
+## 0IN7IWKmIfwlEysGyWUuRg - 3(mix of modern electronic, pop, and rock)
+
+dataset = []
+dataset2 = []
+dataset3 = []
+
 def getToken():
     # gabungkan client_id dan client_secret
     auth_string = client_id + ':' + client_secret
